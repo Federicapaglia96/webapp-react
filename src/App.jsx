@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home"
 import Movies from "../src/pages/Movies"
+import MoviesCard from './components/MoviesCard';
 
 function App() {
 
