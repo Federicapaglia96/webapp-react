@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function MoviesCard({ movie }) {
+  const navigate = useNavigate();
   const { title, director, image } = movie;
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card" onClick={() =>
+      navigate("/singleMovie")} 
+      style={{ width: "18rem" }}>
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
