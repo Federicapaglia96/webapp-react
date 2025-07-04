@@ -7,7 +7,7 @@ function MoviesCard({ movie }) {
   const { title, director, image } = movie;
   return (
     <div className="card" onClick={() =>
-      navigate("/singleMovie")} 
+      navigate("/singleMovie/" + movie.id)} 
       style={{ width: "18rem" }}>
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">

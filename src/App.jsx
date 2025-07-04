@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<GuestLayout />} />
         <Route index element={<Home />} />
         <Route path="/Movies" element={<Movies />} />
-        <Route path="/singleMovie" element={<SingleMovie />} />
+        <Route path="/singleMovie/:movieId" element={<SingleMovie />} />
       </Routes>
     </BrowserRouter>
   )
